@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ngsl",
+    "name": "NGSL 高频词",
+    "count": 2851,
+    "file": "/data/ngsl.json"
+  },
+  {
+    "id": "gaokao",
+    "name": "高考英语 3500",
+    "count": 3285,
+    "file": "/data/books/gaokao.json"
+  },
+  {
+    "id": "cet4",
+    "name": "四级词汇",
+    "count": 5223,
+    "file": "/data/books/cet4.json"
+  },
+  {
+    "id": "cet6",
+    "name": "六级词汇",
+    "count": 3777,
+    "file": "/data/books/cet6.json"
+  },
+  {
+    "id": "ielts",
+    "name": "雅思词汇真经",
+    "count": 3631,
+    "file": "/data/books/ielts.json"
+  },
+  {
+    "id": "test",
+    "name": "测试词本",
+    "count": 10,
+    "file": "/data/books/test.json"
+  }
+]
