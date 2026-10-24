@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f8fc" />
+  <title>猛猛背单词 · powered by 爆汁白桃儿</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"><img src="/logo.jpg" alt="猛猛背单词 Logo"></div><div><strong>猛猛背单词</strong><small>开发者：爆汁白桃儿</small></div></div>
+      <nav class="primary-nav" aria-label="产品导航">
+        <div class="tree-group">
+          <button class="primary-nav-item" data-section="memorize" aria-expanded="true"><span class="tree-caret"><img src="/icons/chevron-down.svg" alt=""></span>听写练习</button>
+          <nav class="secondary-nav" aria-label="听写练习子菜单">
+            <button class="nav-item active" data-page="today"><span class="nav-icon"><img src="/icons/today.svg" alt=""></span>今日听写</button>
+            <button class="nav-item" data-page="mistakes"><span class="nav-icon"><img src="/icons/mistakes.svg" alt=""></span>错词本 <i id="mistakeBadge">0</i></button>
+            <button class="nav-item" data-page="settings"><span class="nav-icon"><img src="/icons/backup-sync.svg" alt=""></span>备份与同步</button>
+          </nav>
+        </div>
+        <button class="primary-nav-item" data-section="familiar">刷词练习</button>
+        <button class="primary-nav-item" data-section="market">词本市场</button>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="topbar"><h1 id="pageTitle">今日听写</h1></header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+  <div id="overlay" class="overlay hidden"></div>
+  <div id="toast" class="toast hidden"></div>
+  <input type="file" id="backupFile" accept=".json,application/json" hidden />
+  <script src="/app.js"></script>
+</body>
+</html>
